@@ -1,6 +1,7 @@
 source "http://rubygems.org"
 
 gem 'net-ldap'
+gem 'rdoc'
 
 group :development do
   gem "shoulda", ">= 0"

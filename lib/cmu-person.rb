@@ -5,13 +5,17 @@ module CMU
   	class RecordNotFound < StandardError;	end
 
   	def initialize(andrewid)
-  		raise RecordNotFound, "#{andrew_id} is not a valid Andrew ID" unless @data = fetch(andrewid)
+  		raise RecordNotFound unless @data = fetch(andrewid)
   	end
 
     def fetch(user)
       ldap = Net::LDAP.new(:host => 'ldap.andrew.cmu.edu')
       ldap.search(:base => 'ou=Person,dc=cmu,dc=edu', 
                   :filter => 'cmuAndrewId='+user ).first
+    end
+
+    def andrew_id
+      @data[:cmuAndrewId].last
     end
 
     def name
