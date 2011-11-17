@@ -37,6 +37,14 @@ module CMU
     		@data[:mail].last
     	end
     end
+    
+    def phone
+      if @data.attribute_names.include?(:cmupreferredtelephone)
+        @data[:cmupreferredtelephone].last.gsub(/[^0-9]/,'')
+      else
+        nil
+      end
+    end
   
     def type 
     	@data[:edupersonaffiliation].last
