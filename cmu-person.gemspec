@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = "cmu-person"
-  s.version = "0.0.1"
+  s.version = "0.0.2"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Seth Vargo"]
-  s.date = "2011-11-12"
+  s.date = "2011-11-17"
   s.description = "This tool is used to search Carnegie Mellon's LDAP directory. Provide an Andrew ID and this will automatically parse the results and return them in a readable format."
   s.email = "sethvargo@gmail.com"
   s.extra_rdoc_files = [
@@ -17,13 +17,14 @@ Gem::Specification.new do |s|
     "README.markdown"
   ]
   s.files = [
-    ".document",
     "Gemfile",
     "Gemfile.lock",
     "LICENSE.txt",
     "README.markdown",
     "Rakefile",
+    "SAMPLE",
     "VERSION",
+    "cmu-person.gemspec",
     "lib/cmu-person.rb",
     "test/helper.rb",
     "test/test_cmu-person.rb"
