@@ -1,6 +1,9 @@
 require 'net/ldap'
 
+# ::nodoc::
+# @private
 module CMU
+  # A CMU::Person class
   class Person
     # Attempts to create and return a new CMU::Person from the CMU LDAP directory.
     #
@@ -25,6 +28,7 @@ module CMU
      end
   	end
   	
+  	# ::nodoc::
   	# @private
   	def initialize(andrew_id)
   	  ldap = Net::LDAP.new(:host => 'ldap.andrew.cmu.edu')
@@ -138,12 +142,14 @@ module CMU
   	  @school ||= @data[:edupersonschoolcollegename].reject{|c| filters.include?(c)}.last
     end
     
+    # ::nodoc::
     # @private
     def inspect
       fields = %w(andrew_id first_name last_name email phone type title)
       @inspect ||= "<CMU::Person #{fields.collect{|f| f + ': ' + self.send(f.to_sym).inspect}.join(', ')}>"
     end
     
+    # ::nodoc::
     # @private
     def to_s
       @to_s ||= "<CMU::Person \"#{self.send(:name)} (#{self.send(:andrew_id)})\">"

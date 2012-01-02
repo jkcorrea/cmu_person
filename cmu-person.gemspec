@@ -18,6 +18,7 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # development dependencies
+  s.add_development_dependency 'redcarpet'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'yard'
   

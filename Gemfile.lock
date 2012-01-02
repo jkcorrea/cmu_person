@@ -9,6 +9,7 @@ GEM
   specs:
     diff-lcs (1.1.3)
     net-ldap (0.2.2)
+    redcarpet (2.0.1)
     rspec (2.7.0)
       rspec-core (~> 2.7.0)
       rspec-expectations (~> 2.7.0)
@@ -24,5 +25,6 @@ PLATFORMS
 
 DEPENDENCIES
   cmu-person!
+  redcarpet
   rspec
   yard
