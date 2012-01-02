@@ -10,7 +10,7 @@ If you want to use this gem for personal use in your terminal, just type the fol
 gem install cmu-person
 ```
 
-If you plan to use this in a Rails project, add the following to your `Gemfile`:
+If you plan to use this in a Rails project (or other project managed by Bundler), add the following to your `Gemfile`:
 
 ```ruby
 gem 'cmu-person'
@@ -22,15 +22,17 @@ Usage
 -----
 
 ```ruby
-user = CMU::Person.new('svargo')
+user = CMU::Person.find('svargo')
 user.first_name #=> "Seth"
 user.grade #=> "Junior"
 ```
 
 ```ruby
 user = CMU::Person.new('i_dont_exist')
-#=> RecordNotFound Exception
+#=> CMU::RecordNotFound Exception
 ```
+
+For a complete list of methods, view the [YARD Documentation](http://rubydoc.info/gems/cmu-person/0.0.3/frames)
 
 License
 -------
