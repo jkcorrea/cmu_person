@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cmu-person (0.0.3)
+    cmu-person (0.0.4)
       net-ldap
 
 GEM
