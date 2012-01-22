@@ -7,12 +7,12 @@ Installation
 ------------
 If you want to use this gem for personal use in your terminal, just type the following command in bash:
 ```bash
-gem install cmu-person
+gem install cmu_person
 ```
 
 If you plan to use this in a Rails project (or other project managed by Bundler), add the following to your `Gemfile`:
 
-    gem 'cmu-person'
+    gem 'cmu_person'
 
 Don't forget to run the `bundle` command to install the gem!
 
@@ -28,7 +28,7 @@ Usage
     user = CMU::Person.new('i_dont_exist')
     #=> CMU::RecordNotFound Exception
 
-For a complete list of methods, view the [YARD Documentation](http://rubydoc.info/gems/cmu-person/0.0.3/frames)
+For a complete list of methods, view the [YARD Documentation](http://rubydoc.info/gems/cmu_person/0.0.3/frames)
 
 License
 -------
