@@ -1,7 +1,7 @@
 PATH
   remote: .
   specs:
-    cmu-person (0.0.4)
+    cmu_person (0.0.1)
       net-ldap
 
 GEM
@@ -24,7 +24,7 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
-  cmu-person!
+  cmu_person!
   redcarpet
   rspec
   yard
