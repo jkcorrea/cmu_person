@@ -6,6 +6,7 @@ Originally inspired by [David Taylor](https://github.com/tinystatemachine)'s [an
 Installation
 ------------
 If you want to use this gem for personal use in your terminal, just type the following command in bash:
+
 ```bash
 gem install cmu_person
 ```
