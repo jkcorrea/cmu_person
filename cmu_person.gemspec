@@ -3,14 +3,12 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'cmu_person'
-  s.version     = '0.0.1'
+  s.version     = '0.0.2'
   s.author      = 'Seth Vargo'
   s.email       = 'sethvargo@gmail.com'
   s.homepage    = 'https://github.com/sethvargo/cmu_person'
   s.summary     = %q{A simple interface for searching CMU LDAP directory}
   s.description = %q{This tool is used to search Carnegie Mellon's LDAP directory. Provide an Andrew ID and this will automatically parse the results and return them in a readable format.}
-
-  s.rubyforge_project = 'cmu_person'
 
   s.files         = `git ls-files`.split("\n")
   s.test_files    = `git ls-files -- {test,spec,features}/*`.split("\n")
@@ -18,10 +16,11 @@ Gem::Specification.new do |s|
   s.require_paths = ["lib"]
 
   # development dependencies
+  s.add_development_dependency "rake"
   s.add_development_dependency 'redcarpet'
   s.add_development_dependency 'rspec'
   s.add_development_dependency 'yard'
-  
+
   # runtime dependencies
   s.add_runtime_dependency 'net-ldap'
 end
