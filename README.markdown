@@ -1,6 +1,8 @@
 CMU Person
 ==========
 
+[![Build Status](https://secure.travis-ci.org/sethvargo/cmu_person.png?branch=master)](http://travis-ci.org/sethvargo/cmu_person)
+
 Originally inspired by [David Taylor](https://github.com/tinystatemachine)'s [andrewid](https://github.com/tinystatemachine/andrewid), CMU Person is a simple rubygem used for searching Carnegie Mellon's LDAP servers for student information.
 
 Installation
