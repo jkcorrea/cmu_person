@@ -1,6 +1,8 @@
 CMU Person
 ==========
 
+A fork of Seth Vargo's original gem https://github.com/sethvargo/cmu_person being maintained here now.
+
 [![Build Status](https://secure.travis-ci.org/sethvargo/cmu_person.png?branch=master)](http://travis-ci.org/sethvargo/cmu_person)
 
 Originally inspired by [David Taylor](https://github.com/tinystatemachine)'s [andrewid](https://github.com/tinystatemachine/andrewid), CMU Person is a simple rubygem used for searching Carnegie Mellon's LDAP servers for student information.
