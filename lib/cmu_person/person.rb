@@ -10,7 +10,7 @@ module CMU
     # @param [String] the Andrew ID to search for
     # @raise [CMU::RecordNotFound] if the Andrew ID does not exist
     # @return [CMU::Person] a `CMU::Person` object
-    def self.find(andrew_id)
+    def self.find!(andrew_id)
       CMU::Person.new(andrew_id)
     end
 
@@ -20,19 +20,19 @@ module CMU
     #
     # @param [String] the Andrew ID to search for
     # @return [CMU::Person] a `CMU::Person` object
-    def self.find_by_andrew_id(andrew_id)
+    def self.find(andrew_id)
       begin
-       find(andrew_id)
-     rescue
-       nil
-     end
-   end
+        find!(andrew_id)
+      rescue
+        nil
+      end
+    end
 
     # ::nodoc::
     # @private
     def initialize(andrew_id)
-      ldap = Net::LDAP.new(:host => 'ldap.andrew.cmu.edu')
-      @data = ldap.search(:base => 'ou=Person,dc=cmu,dc=edu', :filter => 'cmuAndrewId=' + andrew_id).first
+      ldap = Net::LDAP.new(host: 'ldap.andrew.cmu.edu')
+      @data = ldap.search(base: 'ou=Person,dc=cmu,dc=edu', filter: 'cmuAndrewId=' + andrew_id).first
       raise CMU::RecordNotFound if @data.nil?
     end
 
