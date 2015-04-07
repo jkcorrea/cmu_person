@@ -1,14 +1,14 @@
 PATH
   remote: .
   specs:
-    cmu_person (0.0.2)
+    cmu_person (0.0.3)
       net-ldap
 
 GEM
   remote: https://rubygems.org/
   specs:
     diff-lcs (1.2.4)
-    net-ldap (0.3.1)
+    net-ldap (0.11)
     rake (10.1.0)
     redcarpet (3.0.0)
     rspec (2.14.1)
