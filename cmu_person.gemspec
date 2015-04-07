@@ -3,10 +3,10 @@ $:.push File.expand_path("../lib", __FILE__)
 
 Gem::Specification.new do |s|
   s.name        = 'cmu_person'
-  s.version     = '0.0.2'
+  s.version     = '0.0.3'
   s.author      = 'Seth Vargo'
   s.email       = 'sethvargo@gmail.com'
-  s.homepage    = 'https://github.com/sethvargo/cmu_person'
+  s.homepage    = 'https://github.com/jkcorrea/cmu_person'
   s.summary     = %q{A simple interface for searching CMU LDAP directory}
   s.description = %q{This tool is used to search Carnegie Mellon's LDAP directory. Provide an Andrew ID and this will automatically parse the results and return them in a readable format.}
 
